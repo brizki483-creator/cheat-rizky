@@ -1,0 +1,72 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>CHEAT RIZKY</title>
+<style>
+body{margin:0;background:#101014;color:white;font-family:Arial}
+header{background:linear-gradient(120deg,#750000,#171717);padding:25px}
+h1{color:#ff3333;letter-spacing:3px}
+main{padding:15px;max-width:600px;margin:auto}
+.card{background:#22222b;border:1px solid #444;border-radius:14px;padding:17px;margin:15px 0}
+h2{color:#ff4545}
+button{background:#dc152b;color:white;border:0;padding:12px;border-radius:8px;width:100%;margin-top:10px}
+input{padding:12px;width:90%;margin:8px 0}
+</style>
+</head>
+<body>
+<header>
+<h1>CHEAT RIZKY</h1>
+<p>SOLO RANK BOOST</p>
+</header>
+<main>
+<div class="card">
+<h2>PLAYER PROFILE</h2>
+<p>Rank: LEGEND</p>
+<p>Mode: SOLO RANK</p>
+<p>Hero: IXIA</p>
+<p>Lane: GOLD LANE</p>
+</div>
+<div class="card">
+<h2>BUILD IXIA</h2>
+<ol>
+<li>Swift Boots</li>
+<li>Corrosion Scythe</li>
+<li>Demon Hunter Sword</li>
+<li>Golden Staff</li>
+<li>Malefic Gun</li>
+<li>Wind of Nature</li>
+</ol>
+</div>
+<div class="card">
+<h2>STRATEGI RANKED</h2>
+<p>• Fokus farming.</p>
+<p>• Jaga jarak dari assassin.</p>
+<p>• Jangan war sendirian.</p>
+<p>• Utamakan turret dan Lord.</p>
+</div>
+<div class="card">
+<h2>KALKULATOR WIN RATE</h2>
+<input id="total" type="number" placeholder="Total pertandingan">
+<input id="win" type="number" placeholder="Jumlah menang">
+<button onclick="hitung()">HITUNG</button>
+<h3 id="hasil"></h3>
+</div>
+<div class="card">
+<h2>ANALISIS SOLO RANK</h2>
+<p>Periksa draft, minimap, dan komposisi lawan sebelum bertanding.</p>
+<p>Website ini tidak mengubah matchmaking menjadi bot.</p>
+</div>
+</main>
+<script>
+function hitung(){
+let t=Number(document.getElementById('total').value);
+let w=Number(document.getElementById('win').value);
+if(t<=0||w<0||w>t){hasil.innerText="Data tidak valid";return;}
+hasil.innerText="WIN RATE: "+(w/t*100).toFixed(2)+"%";
+}
+</script>
+</body>
+</html>
